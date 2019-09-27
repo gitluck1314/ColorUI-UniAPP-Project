@@ -44,6 +44,9 @@ current|Number|是|当前激活的模式，list节点的索引值
 list|Array|是|启动模式列表
 
 **list说明：**
+
+
+
 属性|	类型|	是否必填|	描述
 ---|---|---|---
 name|	String|	是|	启动模式名称
