@@ -1,0 +1,94 @@
+<template>
+	<view class="page">
+		<view class="touxiang">
+			<view class="bg-blue-green">
+				<view style="display: flex;justify-content: flex-start;">
+					<image class=" xl round margin-change" style="width: 100px;height: 100px;font-size: 2.5em;"  :src='userInfo.avatar' mode=""></image>
+				</view>
+			</view>
+		</view>
+		<view class="cu-list menu" :class="menuBorder?'sm-border':''">
+			<view class="cu-item" >
+				<view class="content flex" style="justify-content: space-between;" >
+					<view >
+						<text class="cuIcon-people text-blue"></text>
+						<text class="text-grey">姓名</text>
+					</view>
+					<view>
+						<text class="text-grey ">{{userInfo.username}}</text>
+					</view>
+				</view>
+			</view>
+
+			<view class="cu-item"  >
+				<view class=" content flex" style="justify-content: space-between;"  open-type="contact">
+					<view class="">
+						<text class="cuIcon-phone text-olive"></text>
+						<text class="text-grey">手机号</text>
+					</view>
+					<view class="">
+						<text class="text-grey">{{userInfo.mobile}}</text>
+					</view>
+				</view>
+			</view>
+			<view class="cu-item" >
+				<view class="content flex" style="justify-content: space-between;" hover-class="none" open-type="redirect">
+					<view >
+						<text class="icon-location text-orange"></text>
+						<text class="text-grey">所在城市</text>
+					</view>
+					<view>
+						<text class="text-grey">{{userInfo.cityId.provinceName+userInfo.cityId.cityName+userInfo.cityId.regionName+userInfo.cityId.countyName}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				menuBorder: true,
+				userInfo:{}
+			}
+		},
+		created:function(){
+			const value = uni.getStorageSync('loginUser');
+			// console.log('value===========',value);
+			uni.request({
+				url:this.websiteUrl+'/api/user/userinfo/'+ value._id,
+				method:'GET',
+				dataType: 'json',
+				success: (res) => {
+					// console.log("===+++ res ++",res );
+					if(res.statusCode == 200){
+						this.userInfo = res.data.data;
+						console.log(res.data.data,'22222222222');
+						// console.log('&&&&&&&&this.userInfo&&&&&&',this.userInfo);
+					}
+				}
+			})
+		},
+		methods: {
+			MenuBorder(e) {
+				this.menuBorder = e.detail.value
+			},
+			MenuArrow(e) {
+				this.menuArrow = e.detail.value
+			},
+		}
+	}
+</script>
+
+<style>
+.bg-blue-green{
+		background:linear-gradient(top,rgba(63,205,235,1),rgba(188,226,158,1)); 
+	}
+	.margin-change{margin: 30px auto;}
+	.page{
+		height: 100vh;
+		width: 100vw;
+	}
+</style>

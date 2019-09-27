@@ -1,0 +1,10 @@
+
+.bg-change-cyan{
+	background-color: #49cfeba3;
+    color: #fff;
+}
+.bg-change-cyan-hover{
+	background-color: #49cfebeb;
+    color: #fff;
+}
+

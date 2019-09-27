@@ -1,0 +1,139 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : {
+				"navigationBarTitleText": "登录",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/user/user",
+            "style" : {
+				"navigationBarTitleText": "用户中心",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/jingdian-mengpiao/jingdian-mengpiao",
+            "style" : {
+				"navigationBarTitleText": "景点门票"
+			}
+        }
+        ,{
+            "path" : "pages/cities/cities",
+            "style" : {
+				"navigationBarTitleText": "城市列表",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/jingdian_detail/jingdian_detail",
+            "style" : {
+				"navigationBarTitleText": "景点详情",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/buyTickets/buyTickets",
+            "style" : {
+				"navigationBarTitleText": "订单填写"
+			}
+        }
+        ,{
+            "path" : "pages/orders/orders",
+            "style" : {
+				"navigationBarTitleText": "全部订单"
+			}
+        }
+        ,{
+            "path" : "pages/regit/regit",
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/userCenter/userCenter",
+            "style" : {
+				"navigationBarTitleText": "个人信息"
+			}
+        }
+        ,{
+            "path" : "pages/accountMark/accountMark",
+            "style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/createAccount/createAccount",
+            "style" : {
+				"navigationBarTitleText": "新建账目"
+			}
+        }
+        ,{
+            "path" : "pages/weather/weather",
+            "style" : {
+				"navigationBarTitleText": "城市天气",
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+        ,{
+            "path" : "pages/searchTickets/searchTickets",
+            "style" : {
+				"navigationBarTitleText": "景点查询"
+			}
+        }
+    ],
+	   "tabBar": {
+	    "color": "#7a7e83",
+	    "selectedColor": "#0faeff",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "text": "首页",
+	        "iconPath": "static/img/home.png",
+	        "selectedIconPath": "static/img/homeHL.png"
+	    }, {
+	        "pagePath": "pages/orders/orders",
+	        "text": "订单",
+	        "iconPath": "static/img/order.png",
+	        "selectedIconPath": "static/img/orderHL.png"
+	    }, {
+	        "pagePath": "pages/user/user",
+	        "text": "我的",
+	        "iconPath": "static/img/user.png",
+	        "selectedIconPath": "static/img/userHL.png"
+	    }]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "rgb(73, 207, 235)",
+		"backgroundColor": "rgb(73, 207, 235)",
+		"enablePullDownRefresh":true
+	}
+}

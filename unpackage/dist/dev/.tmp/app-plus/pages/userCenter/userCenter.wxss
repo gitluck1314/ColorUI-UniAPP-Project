@@ -1,0 +1,12 @@
+
+.bg-blue-green{
+		background:-webkit-gradient(linear,left top, left bottom,from(rgba(63,205,235,1)),to(rgba(188,226,158,1)));
+		background:-o-linear-gradient(top,rgba(63,205,235,1),rgba(188,226,158,1));
+		background:linear-gradient(top,rgba(63,205,235,1),rgba(188,226,158,1));
+}
+.margin-change{margin: 30px auto;}
+.page{
+		height: 100vh;
+		width: 100vw;
+}
+

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/jingdian-mengpiao/jingdian-mengpiao",
+    "pages/cities/cities",
+    "pages/jingdian_detail/jingdian_detail",
+    "pages/buyTickets/buyTickets",
+    "pages/orders/orders",
+    "pages/regit/regit",
+    "pages/userCenter/userCenter",
+    "pages/accountMark/accountMark",
+    "pages/createAccount/createAccount",
+    "pages/weather/weather",
+    "pages/searchTickets/searchTickets"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "rgb(73, 207, 235)",
+    "backgroundColor": "rgb(73, 207, 235)",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#0faeff",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/homeHL.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "订单",
+        "iconPath": "static/img/order.png",
+        "selectedIconPath": "static/img/orderHL.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/userHL.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

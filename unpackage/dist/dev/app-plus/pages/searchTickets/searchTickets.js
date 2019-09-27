@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"bg-change-cyan{ background-color: #49cfeba3; color: #fff; }\n.",[1],"bg-change-cyan-hover{ background-color: #49cfebeb; color: #fff; }\n",],undefined,{path:"./pages/searchTickets/searchTickets.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/searchTickets/searchTickets.wxml') } }));

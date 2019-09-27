@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"bg-blue{ background-color: #46cfec75; color: #09aacb; }\n.",[1],"bg-change-grey{ background-color: rgba(204, 204, 204, 0.44); }\n",],undefined,{path:"./pages/buyTickets/buyTickets.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/buyTickets/buyTickets.wxml') } }));

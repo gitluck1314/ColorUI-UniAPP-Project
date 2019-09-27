@@ -1,0 +1,17 @@
+
+.dlbutton {
+	color: #FFFFFF;
+	font-size: 34rpx;
+	width: 300rpx;
+	height: 90rpx;
+	-webkit-box-shadow: 0rpx 0rpx 13rpx 0rpx rgba(164, 217, 228, 0.2);
+	        box-shadow: 0rpx 0rpx 13rpx 0rpx rgba(164, 217, 228, 0.2);
+	background-color: #1CBBB4;
+	border-radius: 50rpx;
+	line-height: 100rpx;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100rpx;
+}
+
